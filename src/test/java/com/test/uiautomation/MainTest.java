@@ -39,7 +39,7 @@ public class MainTest {
             driver.manage().window().maximize();
 
             // locate web elements
-            WebElement search = driver.findElement(By.cssSelector("#homeautosuggesttaeVOW3QNgc > input"));
+            WebElement search = driver.findElement(By.xpath("//input[@class='form__text form--large']"));
             search.sendKeys("Apply for a number plate");
 
             WebElement clickSearch = driver.findElement(By.cssSelector("#block-content > article > section.personalised-content > div > div:nth-child(1) > header > div.container > div > form > div.form__actions > button"));
